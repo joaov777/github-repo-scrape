@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-
+# Github username
 github_username = input("Enter the Github username: ")
 
 # URL to scrape
@@ -9,7 +9,6 @@ url = f'https://github.com/{github_username}?tab=repositories'
 
 # Send an HTTP GET request
 response = requests.get(url)
-
 
 # Check if the request was successful
 if response.status_code == 200:
